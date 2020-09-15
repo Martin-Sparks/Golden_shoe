@@ -5,6 +5,6 @@ class Product(models.Model):
     category = models.CharField(max_length=100)
     description = models.CharField(max_length=100)
     size = models.CharField(max_length=20)
-    price = models.FloatField
+    price = models.FloatField(null=True)
     # picture = models.ImageField
-    quantity = models.IntegerField
+    quantity = models.IntegerField(null=True)
